@@ -12,12 +12,15 @@
 :root{
     --highligt-color: #0057FF;
     --text-color: white;
-    --bg-color:#101630;
+    --bg-color:#01071a;
     --btn-color: linear-gradient(to right, #4fa4da, #4829be);
     /* font-family: 'Open Sans', sans-serif; */
 }
 body{
     background-color: var(--bg-color);
+    /* background-image: url(back.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain; */
 }
 /* navbar design */
 header{
@@ -26,19 +29,19 @@ header{
     right: 0;
     width: 100%;
     /* padding: 15px 1%; */
-    /* z-index: 1000; */
+    z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: transparent;
 }
 .logo{
-    height: 120px;
-    width:180px;
+    height: 100px;
+    width:130px;
     /* margin-top: 20px; */
     /* font-size: 20px;
     font-weight: 300; */
-    margin-left: 100px; 
+    margin-left: 30px; 
 
 }
 .navbar{
@@ -48,7 +51,7 @@ header{
     display: flex;
     align-items: center;
     align-content: center;
-    margin: 5px;
+    margin: 20px;
     /* height: 34px; */
     /* width: 85px; */
 }
@@ -87,7 +90,7 @@ header{
     margin-right: 15px;
     color: var(--text-color);
     cursor: pointer;
-    transition: all .50s ease-in;
+    transition: all .30s ease-in;
 }
 .h-right a:hover{
     transform: translateY(-3px);
@@ -105,6 +108,12 @@ section{
     align-items: center;
     justify-content: flex-start;
 }
+.right-img img{
+        position: relative;
+        height: 409px;
+        left: 250px;
+    }
+
 .home-text{
     color: var(--text-color);
     font-size: 3rem;
@@ -137,7 +146,12 @@ section{
     grid-template-columns: repeat(2, 1fr);
     gap: 9rem;
     align-items: center;
+    position: relative;
+    right: 4rem;
 }
+/* .about-img{
+    position: relative;
+} */
 .about-img img{
     width: 100%;
     height: auto;
@@ -145,6 +159,18 @@ section{
 }
 .about-text{
     color: var(--text-color);
+}
+.border{
+    border-radius: 10px;
+    /* border: 10px solid ; */
+    /* filter: drop-shadow(linear-gradient(to right, #4fa4da, #4829be)); */
+    background: var(--btn-color);
+    position: absolute;
+    height: 32rem;
+    width: 22rem;
+    top: 6rem;
+    left:18rem;
+    z-index: -1;
 }
 .btn1{
     display: inline-block;
