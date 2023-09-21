@@ -12,13 +12,13 @@
 :root{
     --highligt-color: #0057FF;
     --text-color: white;
-    --bg-color:#01071a;
+    --bg-color:rgb(1, 7, 26);
     --btn-color: linear-gradient(to right, #4fa4da, #4829be);
     /* font-family: 'Open Sans', sans-serif; */
 }
 body{
     background-color: var(--bg-color);
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 /* scrollbar design */
 body::-webkit-scrollbar{
@@ -341,6 +341,10 @@ section{
     border: 2px solid var(--highligt-color);
     color: var(--btn-color);
 }
+.change_content::after{
+    content: "";
+    animation: changetext 10s infinite linear;
+}
 /* about section design */
 .about{
     display: grid;
@@ -430,3 +434,11 @@ section{
         padding: 50px 8% 40px;
     }
 } */
+
+/*change content animation*/
+@keyframes changetext {
+    0%{content: "Frontend Developer";}
+    35%{content: "Open Source Contributor";}
+    70%{content: "Content Creator";}
+    100%{content: "Gamer";} 
+}
